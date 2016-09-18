@@ -1,0 +1,28 @@
+//projekt zins_rechner by https://github.com/godlikecs12
+#include <iostream>
+
+int main()
+{
+		
+	int K, p, t;																									//Variablen K, p und t werden erstellt
+																													//K=Kapital, p=Zins, t=time
+	std::cout << "Werte eingeben:"																					//Ausgabe "Werte eingeben:"
+		<< std::endl																								//Zeilenumbruch
+		<< "1.K, 2.p, 3.t"																							//Ausgabe "1.K, 2.p, 3.t"
+		<< std::endl																								//Zeilenumbruch
+		<< "(K=Kapital, p=Zins, t=time ein Monat=30t)"																//Ausgabe "(K=Kapital, p=Zins, t=time ein Monat=30t)"
+		<< std::endl;																								//Zeilenumbruch
+
+	std::cin >> K >> p >> t;																						//Variablen engeben
+
+	std::cout << "(" << p << "/" << 100 << ")"																		//Ausgabe	
+		<< "*"
+		<< "(" << t << "/" << 360 << ")"
+		<< "*" << K
+		<< "="
+		<< K*((p/100)*(t/360))
+		<< std::endl;																								//Zeilenumbruch
+
+	system("PAUSE");																								//cmd offen lassen
+	return 0;
+}
