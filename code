@@ -20,7 +20,7 @@ int main()
 		<< "(" << t << "/" << 360 << ")"
 		<< "*" << K
 		<< "="
-		<< K*((p/100)*(t/360))
+		<< K*(p/100)*(t/360)
 		<< std::endl;																								//Zeilenumbruch
 
 	system("PAUSE");																								//cmd offen lassen
